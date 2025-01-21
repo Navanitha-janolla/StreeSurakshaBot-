@@ -1,3 +1,3 @@
-def greet(name):
-    return f"hello,{name}"
-print(greet("jhon"))
+def greet(name,msg):
+    return f"{msg},{name}"
+print(greet("jhon", "hi"))

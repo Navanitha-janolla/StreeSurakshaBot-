@@ -13,8 +13,9 @@ knowledge_file = "C:\\Users\\Peddi\\OneDrive\\Desktop\\workchol ai\\knowledge1_b
 # LangChain imports
 from langchain_community.document_loaders import TextLoader
 from langchain.text_splitter import CharacterTextSplitter
-from langchain.embeddings import HuggingFaceEmbeddings
-from langchain.vectorstores import FAISS
+from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_community.vectorstores import FAISS
+
 from langchain.chains import RetrievalQA
 from langchain_core.prompts import PromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI

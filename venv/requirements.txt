@@ -1,0 +1,5 @@
+langchain
+langchain-google-genai
+google-api-python-client
+streamlit
+python-dotenv

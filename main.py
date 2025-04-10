@@ -34,7 +34,9 @@ def create_chatbot(knowledge_file):
     texts = text_splitter.split_documents(documents)
 
     # Create embeddings and vectorstore
-    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+
+    # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     vectorstore = FAISS.from_documents(texts, embeddings)
     retriever = vectorstore.as_retriever()
 
